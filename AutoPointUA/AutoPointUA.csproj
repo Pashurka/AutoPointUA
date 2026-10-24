@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{A81E737E-DB33-4DBC-BC9A-EC88CA2F6F5B}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoPointUA</RootNamespace>
+    <AssemblyName>AutoPointUA</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.26100.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <PackageCertificateKeyFile>AutoPointUA_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.12</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Mvvm">
+      <Version>7.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Animations">
+      <Version>7.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
+      <Version>7.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Uwp.Managed">
+      <Version>2.0.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\en-us\Resources.resw">
+      <SubType>Designer</SubType>
+    </PRIResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activation\ActivationHandler.cs" />
+    <Compile Include="Behaviors\NavigationViewHeaderBehavior.cs" />
+    <Compile Include="Behaviors\NavigationViewHeaderMode.cs" />
+    <Compile Include="Helpers\EnumToBooleanConverter.cs" />
+    <Compile Include="Helpers\ImagesNavigationHelper.cs" />
+    <Compile Include="Helpers\NavHelper.cs" />
+    <Compile Include="Helpers\SettingsStorageExtensions.cs" />
+    <Compile Include="Services\ActivationService.cs" />
+    <Compile Include="Activation\DefaultActivationHandler.cs" />
+    <Compile Include="Services\NavigationService.cs" />
+    <Compile Include="Services\ThemeSelectorService.cs" />
+    <Compile Include="ViewModels\AnnouncementViewModel.cs" />
+    <Compile Include="ViewModels\AudiViewViewModel.cs" />
+    <Compile Include="ViewModels\AuthorizationViewModel.cs" />
+    <Compile Include="ViewModels\ProfileViewModel.cs" />
+    <Compile Include="ViewModels\TeslaViewViewModel.cs" />
+    <Compile Include="ViewModels\GarageViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\ReviewsViewModel.cs" />
+    <Compile Include="ViewModels\SellCarViewModel.cs" />
+    <Compile Include="ViewModels\SettingsViewModel.cs" />
+    <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\AnnouncementPage.xaml.cs">
+      <DependentUpon>AnnouncementPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AudiViewPage.xaml.cs">
+      <DependentUpon>AudiViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AuthorizationPage.xaml.cs">
+      <DependentUpon>AuthorizationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProfilePage.xaml.cs">
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TeslaViewPage.xaml.cs">
+      <DependentUpon>TeslaViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GaragePage.xaml.cs">
+      <DependentUpon>GaragePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReviewsPage.xaml.cs">
+      <DependentUpon>ReviewsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SellCarPage.xaml.cs">
+      <DependentUpon>SellCarPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShellPage.xaml.cs">
+      <DependentUpon>ShellPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Styles\Image.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\_Colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\_FontSizes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\_Thickness.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AnnouncementPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AudiViewPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AuthorizationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ProfilePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\TeslaViewPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\GaragePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ReviewsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SellCarPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SettingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ShellPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\ResourceExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\BackgroundTileImage.png" />
+    <Content Include="Assets\Cars\Audi1.png" />
+    <Content Include="Assets\Cars\Audi2.png" />
+    <Content Include="Assets\Cars\Audi3.png" />
+    <Content Include="Assets\Cars\Audi4.png" />
+    <Content Include="Assets\Cars\BMW1.png" />
+    <Content Include="Assets\Cars\Tesla1.png" />
+    <Content Include="Assets\Cars\Tesla2.png" />
+    <Content Include="Assets\Cars\Tesla3.png" />
+    <Content Include="Assets\Cars\Tesla4.png" />
+    <Content Include="Assets\Cars\Toyota1.png" />
+    <Content Include="Assets\Image\Acura.jpg" />
+    <Content Include="Assets\Image\AlfaRomeo.jpg" />
+    <Content Include="Assets\Image\AstonMartin.jpg" />
+    <Content Include="Assets\Image\AUDI.jpg" />
+    <Content Include="Assets\Image\Bentley.jpg" />
+    <Content Include="Assets\Image\BMW.jpg" />
+    <Content Include="Assets\Image\Buick.jpg" />
+    <Content Include="Assets\Image\Cadillac.jpg" />
+    <Content Include="Assets\Image\Chevrolet.jpg" />
+    <Content Include="Assets\Image\Chrysler.jpg" />
+    <Content Include="Assets\Image\Citroen.jpg" />
+    <Content Include="Assets\Image\Dodge.jpg" />
+    <Content Include="Assets\Image\Ferrari.jpg" />
+    <Content Include="Assets\Image\Fiat.jpg" />
+    <Content Include="Assets\Image\Ford.jpg" />
+    <Content Include="Assets\Image\History.png" />
+    <Content Include="Assets\Image\Honda.jpg" />
+    <Content Include="Assets\Image\Hummer.jpg" />
+    <Content Include="Assets\Image\Jaguar.jpg" />
+    <Content Include="Assets\Image\Jeep.jpg" />
+    <Content Include="Assets\Image\Lamborghini.jpg" />
+    <Content Include="Assets\Image\Lancia.jpg" />
+    <Content Include="Assets\Image\LandRover.jpg" />
+    <Content Include="Assets\Image\Lexus.jpg" />
+    <Content Include="Assets\Image\Lincoln.jpg" />
+    <Content Include="Assets\Image\Mazda.jpg" />
+    <Content Include="Assets\Image\MercedesBenz.jpg" />
+    <Content Include="Assets\Image\MG.jpg" />
+    <Content Include="Assets\Image\Mini.jpg" />
+    <Content Include="Assets\Image\Nissan.jpg" />
+    <Content Include="Assets\Image\Opel.jpg" />
+    <Content Include="Assets\Image\Peugeot.jpg" />
+    <Content Include="Assets\Image\Plymouth.jpg" />
+    <Content Include="Assets\Image\Porsche.jpg" />
+    <Content Include="Assets\Image\Renault.jpg" />
+    <Content Include="Assets\Image\Rolls-Royce.jpg" />
+    <Content Include="Assets\Image\Rover.jpg" />
+    <Content Include="Assets\Image\Tesla.jpg" />
+    <Content Include="Assets\Image\Toyota.jpg" />
+    <Content Include="Assets\Image\Volkswagen.jpg" />
+    <Content Include="Assets\Image\Volvo.jpg" />
+    <Content Include="Assets\PlaceholderImage.png" />
+    <Content Include="Assets\SampleData\SamplePhoto1.png" />
+    <Content Include="Assets\SampleData\SamplePhoto10.png" />
+    <Content Include="Assets\SampleData\SamplePhoto2.png" />
+    <Content Include="Assets\SampleData\SamplePhoto3.png" />
+    <Content Include="Assets\SampleData\SamplePhoto4.png" />
+    <Content Include="Assets\SampleData\SamplePhoto5.png" />
+    <Content Include="Assets\SampleData\SamplePhoto6.png" />
+    <Content Include="Assets\SampleData\SamplePhoto7.png" />
+    <Content Include="Assets\SampleData\SamplePhoto8.png" />
+    <Content Include="Assets\SampleData\SamplePhoto9.png" />
+    <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="AutoPointUA_TemporaryKey.pfx" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutoPointUA.Core\AutoPointUA.Core.csproj">
+      <Project>{5E700201-CB85-4FA1-AE2C-096FB8924131}</Project>
+      <Name>AutoPointUA.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
